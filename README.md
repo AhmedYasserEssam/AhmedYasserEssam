@@ -1,5 +1,7 @@
 # Hi, I'm Ahmed 👋
-I'm a second-year undergraduate passionate about data science, machine learning, and turning raw data into actionable insights. Currently honing my skills in Python, SQL, and data analysis, with hands-on projects in data visualization and predictive modeling.<br>I’m actively exploring real-world datasets, participating in coding challenges, and building a solid foundation in statistics, algorithms, and big data tools. My goal is to solve meaningful problems using data and contribute to impactful projects in tech and beyond.
+I’m a Data Science student at Egypt University of Informatics with a passion for uncovering the why behind real-world problems. Whether it’s analyzing what drives customer behavior or making sense of unstructured data, I’m drawn to the hidden patterns that transform information into actionable insight.
+I didn’t choose data science just because it’s the future—I chose it because it aligns with my curiosity, critical thinking, and drive to make a measurable impact. I’ve been gaining hands-on experience in Python, machine learning, and real-world analytics, with a strong focus on working with real datasets that challenge conventional thinking.
+I’m currently open to internships and collaborative projects where I can apply my growing skill set and contribute to meaningful, data-driven solutions. I’m eager to connect with professionals and teams who share a passion for using data to create lasting value.
 
 
 ## 🌐 Socials:

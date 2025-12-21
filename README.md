@@ -50,7 +50,6 @@ I’m currently open to internships and collaborative projects where I can apply
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Jira](https://img.shields.io/badge/Jira-0052CC.svg?style=for-the-badge&logo=jira&logoColor=white)
 
-##
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mido-77/Mido-77/output/pacman-contribution-graph.svg">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mido-77/Mido-77/output/pacman-contribution-graph-dark.svg">

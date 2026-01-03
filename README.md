@@ -1,8 +1,6 @@
 # Hi, I'm Ahmed 👋
-I’m a Data Science student at Egypt University of Informatics with a passion for uncovering the why behind real-world problems. Whether it’s analyzing what drives customer behavior or making sense of unstructured data, I’m drawn to the hidden patterns that transform information into actionable insight.
-I didn’t choose data science just because it’s the future—I chose it because it aligns with my curiosity, critical thinking, and drive to make a measurable impact. I’ve been gaining hands-on experience in Python, machine learning, and real-world analytics, with a strong focus on working with real datasets that challenge conventional thinking.
-I’m currently open to internships and collaborative projects where I can apply my growing skill set and contribute to meaningful, data-driven solutions. I’m eager to connect with professionals and teams who share a passion for using data to create lasting value.
-
+A junior Computer and Information Sciences student at Egypt University of Informatics, passionate about Data Science and Data Engineering. I thrive on turning raw data into actionable insights and building solutions that solve real-world challenges.
+Curious and fast-learning by nature, I enjoy learning from experienced professionals and immediately applying new knowledge in practical contexts. My goal is to keep growing within the data community, contribute to impactful projects, and connect with like-minded professionals who share a passion for data-driven innovation
 
 ## 🌐 Socials:
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/pCybRRQ8)

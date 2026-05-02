@@ -8,15 +8,12 @@
     <td width="1000px">
       <details>
         <summary><b>About</b></summary>
-
-<br />
-
-<samp>
-Data Science and Engineering student with hands-on project experience in machine learning, data pipelines, and AI-powered applications.
-Built projects including a RAG-based customer service chatbot and data engineering workflows, and currently developing <b>Qima</b>, an early-stage AI-powered nutrition assistant.
-</samp>
-
-      
+        <samp>
+          Data Science and Engineering student with hands-on project experience in machine learning, data pipelines, and AI-powered applications.
+          Built projects including a RAG-based customer service chatbot and data engineering workflows, and currently developing <b>Qima</b>, an early-stage AI-powered nutrition assistant.
+        </samp>
+      </details>
+    </td>
   </tr>
 
   <tr>

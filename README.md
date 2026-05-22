@@ -9,8 +9,9 @@
       <details>
         <summary><b>About</b></summary>
         <samp>
-          Data Science and Engineering student with hands-on project experience in machine learning, data pipelines, and AI-powered applications.
-          Built projects including a RAG-based customer service chatbot and data engineering workflows, and currently developing <b>Qima</b>, an early-stage AI-powered nutrition assistant.
+          Artificial Intelligence student with hands-on experience in machine learning, data pipelines, and AI-powered applications. Built 
+          projects in recommendation systems, analytics engineering, RAG chatbots, and full-stack AI products. Interested in applying AI and 
+          data engineering to business problems through data-driven decision-making and product-focused solutions.
         </samp>
       </details>
     </td>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="100" viewBox="0 0 400 100">
+  <style>
+    @keyframes eat {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -100; }
+    }
+    @keyframes movePacman {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(300px); }
+    }
+    .pacman {
+      fill: #FF0;
+      animation: movePacman 4s linear infinite;
+    }
+    .dots {
+      stroke: #FFF;
+      stroke-width: 10;
+      stroke-dasharray: 0 20;
+      animation: eat 1s linear infinite;
+    }
+  </style>
+  <rect width="400" height="100" fill="#000"/>
+  <!-- Pacman -->
+  <path class="pacman" d="M50,50 L80,50 A30,30 0 1,0 50,80 Z"/>
+  <!-- Moving dots -->
+  <line class="dots" x1="100" y1="50" x2="350" y2="50"/>
+  <text x="10" y="90" fill="#FFF" font-size="12">PACMAN GAME</text>
+</svg>

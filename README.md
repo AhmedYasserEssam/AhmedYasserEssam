@@ -1,5 +1,5 @@
 <h3 align="center">I'm Ahmed Emad</h3>
-<h4 align="center">AI & ML | Data Science | LLMs | CIS Student @ EUI</h4>
+<h4 align="center">AI Student @ EUI</h4>
 
 <br />
 

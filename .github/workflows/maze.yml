@@ -2,7 +2,7 @@ name: Generate Pacman Game
 
 on:
   schedule:
-    - cron: "0 */24 * * *" # هر ۲۴ ساعت یک‌بار اجرا می‌شود
+    - cron: "0 0 * * *" # Run once daily at 00:00 UTC
   workflow_dispatch:
   push:
     branches:
@@ -12,19 +12,20 @@ jobs:
   generate:
     permissions:
       contents: write
+
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Generate pacman-contribution-graph.svg
+      - name: Generate Pacman contribution graphs
         uses: abozanona/pacman-contribution-graph@main
         with:
-          github_user_name: VIDAKHOSHPEY22
+          github_user_name: AhmedYasserEssam
 
-      - name: Push pacman-contribution-graph.svg to the output branch
+      - name: Push generated graphs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output

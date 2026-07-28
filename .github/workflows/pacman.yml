@@ -1,60 +1,87 @@
 name: Pacman Game Animation
+
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   update-pacman:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          ref: output  # Work directly on the output branch
-      
-      - name: Generate Pacman Game SVG
+          ref: output
+
+      - name: Generate Pacman animation
         run: |
-          # This creates an animated Pacman that eats dots (no relation to contributions)
-          cat > pacman.svg << 'EOF'
-          <svg xmlns="http://www.w3.org/2000/svg" width="400" height="100" viewBox="0 0 400 100">
+          cat > pacman.svg <<'EOF'
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="400"
+               height="100"
+               viewBox="0 0 400 100">
+
             <style>
-              @keyframes eat {
-                0% { stroke-dashoffset: 0; }
-                100% { stroke-dashoffset: -100; }
-              }
               @keyframes movePacman {
-                0% { transform: translateX(0); }
-                100% { transform: translateX(300px); }
+                from {
+                  transform: translateX(0);
+                }
+
+                to {
+                  transform: translateX(300px);
+                }
               }
+
               .pacman {
-                fill: #FF0;
+                fill: #ffff00;
                 animation: movePacman 4s linear infinite;
               }
-              .dots {
-                stroke: #FFF;
-                stroke-width: 10;
-                stroke-dasharray: 0 20;
-                animation: eat 1s linear infinite;
+
+              .dot {
+                fill: #ffffff;
               }
             </style>
-            <rect width="400" height="100" fill="#000"/>
-            <!-- Pacman -->
-            <path class="pacman" d="M50,50 L80,50 A30,30 0 1,0 50,80 Z"/>
-            <!-- Moving dots -->
-            <line class="dots" x1="100" y1="50" x2="350" y2="50"/>
-            <text x="10" y="90" fill="#FFF" font-size="12">PACMAN GAME</text>
+
+            <rect width="400" height="100" fill="#000000"/>
+
+            <circle class="dot" cx="120" cy="50" r="5"/>
+            <circle class="dot" cx="160" cy="50" r="5"/>
+            <circle class="dot" cx="200" cy="50" r="5"/>
+            <circle class="dot" cx="240" cy="50" r="5"/>
+            <circle class="dot" cx="280" cy="50" r="5"/>
+            <circle class="dot" cx="320" cy="50" r="5"/>
+
+            <path
+              class="pacman"
+              d="M50 50 L80 35
+                 A30 30 0 1 0 80 65 Z"
+            />
           </svg>
           EOF
-          
-          # Create dark version
-          sed 's/#000/#111/g; s/#FFF/#EEE/g' pacman.svg > pacman-dark.svg
-      
-      - name: Commit and Push
+
+          sed \
+            's/#000000/#111111/g; s/#ffffff/#eeeeee/g' \
+            pacman.svg > pacman-dark.svg
+
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add pacman.svg pacman-dark.svg
-          git commit -m "Update Pacman game animation" || echo "No changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update Pacman animation"
+            git push origin output
+          fi
